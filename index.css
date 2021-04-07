@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./inspiration-geometry.png);
+  background-color: black;
+}
+
+.full {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #faa41a;
+}
+
+.meaning {
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+em {
+  font-weight: bolder;
+}
+
+.input-heading {
+  color: white;
+  font-size: 25px;
+}
+
+input {
+  margin-top: 10px;
+  min-width: 248px;
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #faa41a;
+  color: black;
+  border: none;
+  text-align: center;
+}
+
+.input-heading,
+#preview-content {
+  font-size: 25px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tiles:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
+
+.tiles:nth-child(even) {
+  background-color: #faa41a;
+  color: black;
+}
+
+.tiles {
+  height: 40px;
+  width: 200px;
+  margin: 1%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 600;
+}
