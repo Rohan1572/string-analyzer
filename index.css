@@ -58,10 +58,10 @@ button {
   color: black;
   border: none;
   text-align: center;
+  outline: none;
 }
 
-.input-heading,
-#preview-content {
+.input-heading {
   font-size: 25px;
 }
 
@@ -90,4 +90,14 @@ button {
   text-align: center;
   border-radius: 20px;
   font-weight: 600;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+#preview {
+  color: white;
+  font-size: 20px;
 }
