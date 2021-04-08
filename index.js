@@ -3,7 +3,7 @@ document.getElementById("button").addEventListener("click", function(event){
     });
 const analyse = () =>
 {
-    var v=0,c=0,n=0,sp=0,sc=0;
+    var vo=0,co=0,di=0,sp=0,sc=0;
     var s=document.getElementById("input").value;
     document.getElementById("input").value="";
     document.getElementById("preview").textContent=s;
@@ -11,11 +11,11 @@ const analyse = () =>
     {
         if(s.charCodeAt(i)===65 || s.charCodeAt(i)==97 || s.charCodeAt(i)===69 || s.charCodeAt(i)===101 || s.charCodeAt(i)===73 || s.charCodeAt(i)===105 || s.charCodeAt(i)===79 || s.charCodeAt(i)===111 || s.charCodeAt(i)===85 || s.charCodeAt(i)===117)
         {
-            v++;
+            vo++;
         }
         else if(s.charCodeAt(i)>=48 && s.charCodeAt(i)<=57)
         {
-            n++;
+            di++;
         }
         else if( s.charCodeAt(i)===32)
         {
@@ -27,12 +27,12 @@ const analyse = () =>
         }        
         else
         {
-            c++;
+            co++;
         }
     }
-    document.getElementById("vowels").textContent=v;
-    document.getElementById("consonants").textContent=c;
-    document.getElementById("digits").textContent=n;
+    document.getElementById("vowels").textContent=vo;
+    document.getElementById("consonants").textContent=co;
+    document.getElementById("digits").textContent=di;
     document.getElementById("spaces").textContent=sp;
     document.getElementById("special").textContent=sc;
 };
