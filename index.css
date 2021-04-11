@@ -6,6 +6,7 @@
 
 body {
   background-image: url(./inspiration-geometry.png);
+  	animation: bg 30s linear infinite;
   background-color: black;
 }
 
